@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Maintenance Contract - Techno Link Company</title>
+    <link rel="icon" type="image/x-icon" href="company-logo.png">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-color: #007bff;
+        }
+
+        .hero-content h1 {
+            color: white;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Content Section */
+        .content {
+            display: flex;
+            padding: 40px;
+            gap: 20px;
+            background-color: #ffffff;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .content-left {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .content-left img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content-right {
+            max-width: 600px;
+            flex: 1;
+        }
+
+        .content-right h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .arrow {
+            margin-right: 10px;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Contact Section */
+        .contact-us {
+            padding: 50px;
+            background-color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .contact-us h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .contact-us p {
+            font-size: 1rem;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .guarantees {
+            list-style-type: none;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .guarantees li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        /* Buttons Section */
+        .buttons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .call-us {
+            background-color: #007bff;
+        }
+
+        .call-us:hover {
+            background-color: #0056b3;
+        }
+
+        .services {
+            background-color: #6c757d;
+        }
+
+        .services:hover {
+            background-color: #5a6268;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content-left {
+                max-width: 100%;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .contact-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .contact-us {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Annual Maintenance Contract (AMC)</h1>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="content-left">
+            <img src="amc.jpeg" alt="Technician providing AMC services">
+        </div>
+        <div class="content-right">
+            <h2>Our Annual Maintenance Contract Services</h2>
+            <ul class="features">
+                <li><span class="arrow">➔</span> Regular equipment inspections and service.</li>
+                <li><span class="arrow">➔</span> Priority service with quick response time.</li>
+                <li><span class="arrow">➔</span> 24/7 emergency support for breakdowns.</li>
+                <li><span class="arrow">➔</span> Preventative maintenance to avoid costly repairs.</li>
+                <li><span class="arrow">➔</span> Expert technicians with specialized knowledge.</li>
+                <li><span class="arrow">➔</span> Comprehensive servicing of all systems and components.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-us">
+        <div class="contact-header">
+            <h2>Sign Up for AMC with Techno Link Company</h2>
+        </div>
+        <p>
+            Keep your systems running efficiently with our Annual Maintenance Contracts. Our technicians provide 
+            expert care with preventive maintenance and priority service. Avoid downtime and costly repairs – 
+            sign up for an AMC with us today!
+        </p>
+        <ul class="guarantees">
+            <li>✔️ Priority Service Guarantee</li>
+            <li>✔️ 24/7 Emergency Support</li>
+            <li>✔️ Preventative Maintenance Included</li>
+        </ul>
+        <div class="buttons">
+            <a href="#" class="btn call-us">Call Us</a>
+            <a href="#" class="btn services">Learn More</a>
+        </div>
+    </section>
+</body>
+</html>

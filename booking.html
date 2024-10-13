@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="booking.css">
+
+    <meta name="description"
+        content="Techno Link Company offers top-notch HVAC, refrigeration, and home appliance services in Saudi Arabia, 
+        including installation, maintenance, and repair for both residential and commercial needs. 
+        Our professional team provides reliable central air conditioning, 
+        descaling, retubing, and industrial supply services. Book your appointment online for fast and efficient service. 
+        Located in Dammam, we are dedicated to delivering quality service to ensure comfort and satisfaction for all your technical needs.">
+
+    <meta name="keywords" content="Techno Link Company, Techno Link CO., HVAC services, Refrigeration services, HVAC & Refrigeration, Home appliance repair, 
+        Appliance installation, Home appliance maintenance, Central air conditioning, Central AC services, Saudi Arabia service center, 
+        Saudi service center, Tech services Saudi Arabia, HVAC Saudi Arabia, Air conditioning maintenance, AC installation services, 
+        Professional HVAC services, Book appointment online, Schedule appointment Techno Link, Dammam service center, Malik Fahd Road services, 
+        Saudi HVAC experts, Home maintenance services, Home cleaning services, Home fresh services, Residential appliance services, 
+        Commercial HVAC services, Commercial air conditioning, Industrial supply services, Installation services Saudi Arabia, AC repair Dammam, 
+        Central air conditioning installation, AC maintenance Saudi Arabia, Descaling services, Retubing services, Industrial service solutions, 
+        Reliable home maintenance, Visiting charges HVAC, Visiting charges services, Techno Link appointment, HVAC booking system, 
+        Service appointment online, Tech service Dammam, Residential services Saudi Arabia, Professional service center, HVAC maintenance Dammam, 
+        Tech support Saudi Arabia, Appliance services near me, HVAC maintenance near me, Air conditioner repair Dammam, Quality home services, 
+        Trusted HVAC provider, Service center booking, Online booking services, Saudi Arabia appliance repair, Professional maintenance services, 
+        HVAC experts Dammam, Best HVAC company, Efficient air conditioning, Top-rated HVAC services, Saudi service experts, Trusted repair services, 
+        Book Techno Link appointment, Home appliance experts, Quality HVAC maintenance, Home fresh Dammam, Appliance installation Dammam, 
+        Techno Link services, AC repair experts, Fast appliance repair, Service booking Saudi Arabia, Home clean services, Service center Dammam, 
+        Tech support services, AC installation Dammam, Efficient service center, Best maintenance company, Reliable HVAC services, 
+        Techno Link company Dammam, Quick appointment booking, Trusted maintenance Saudi Arabia, Online service booking, HVAC repair near me, 
+        Professional home services, Saudi HVAC company, Industrial HVAC services, Air conditioning solutions, Residential HVAC solutions, 
+        Maintenance services Dammam, Professional HVAC support, HVAC service center, Expert home appliance repair, Top Saudi HVAC company, 
+        Central air conditioning repair, Saudi home services, HVAC installation Saudi Arabia, Comprehensive service solutions, 
+        Service provider Saudi Arabia, AC services Dammam, Home appliance support">
+
+
+    <title>TECHNO LINK COMPANY</title>
+    <link rel="icon" type="image/x-icon" href="company-logo.png">
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="index.html" class="nav__logo">
+                <img src="company-logo.png" alt="Techno Link CO. Logo" class="nav__logo-img">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="booking.html" class="nav__link">Book Now</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    </section>
+    </main>
+    <section id="appointment" class="appointment">
+        <h1 class="heading">Book an Appointment</h1>
+        <h3 class="title">We are here to assist you</h3>
+
+        <div class="row">
+            <!-- Adding an image next to the form -->
+            <div class="image-container">
+                <img src="booking.png" alt="Book Appointment" class="appointment-image">
+            </div>
+
+            <center>
+                <div class="form-container">
+                    <form id="bookingForm" oninput="checkForm()">
+                        <div class="input-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                                required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="date">Date (Booking Date)</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="department">Services Type</label>
+                            <select id="serviceDropdown" name="service" onchange="updateServiceOptionsAndCharges(this)">
+                                <option value="">Select Service</option>
+                                <option value="central_ac">Central Air Condition</option>
+                                <option value="hvac_refrigeration">HVAC & Refrigeration</option>
+                                <option value="home">Home Appliance</option>
+                                <option value="installation">Installation</option>
+                                <option value="maintenance">Maintenance</option>
+                            </select>
+
+                            <!-- Add this element to display the visiting charges -->
+                            <p>Visiting Charges: <span id="visitingCharges"><strong>SAR 0</strong></span></p>
+                        </div>
+
+                        <!-- The second dropdown for 'Home' related services -->
+                        <div id="additionalDropdown" class="input-group additional-dropdown-container">
+                            <label for="homeService">Appliance Type</label>
+                            <select id="homeServiceDropdown" name="home_service">
+                                <option value="select-appliance-type">Select Appliance Type</option>
+                                <option value="refrigerator">Refrigerator</option>
+                                <option value="dishwasher">Dishwasher</option>
+                                <option value="washing-machine">Washing Machnine</option>
+                                <option value="microwave-oven">Microwave/Oven</option>
+                                <option value="gasoven">Gas Oven</option>
+                                <option value="television">Television</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="message">Address</label>
+                            <textarea id="message" name="Address" rows="2" placeholder="Enter Address"
+                                required></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="submit" value="Book Appointment" class="submit-btn" disabled id="submitBtn">
+                        </div>
+                    </form>
+                </div>
+            </center>
+
+
+            <div class="note_container">
+                <div class="note-section">
+                    <p class="note-title"><strong>Note:</strong> Visiting charges and service process details:</p>
+                    <div class="note-section">
+                        <ul class="note-points">
+                            <li>Visiting charges will be SAR 100 for home appliances, SAR 500 for other listed technical services.</li>
+                            <li>After the visit, our technician will inspect the issue and provide you with suitable service advice.</li>
+                            <li>If you approve the service, visiting charges will be adjusted against your final service bill total.</li>
+                            <li>We aim to perform a complete inspection and suggest the best solution based on our assessment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--========== FOOTER ==========-->
+            <footer class="footer section bd-container">
+                <div class="footer__container bd-grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">Techno Link Company</a>
+                        <span class="footer__description">Service Center</span>
+                        <div>
+                            <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                            <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                            <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Services</h3>
+                        <ul>
+                            <li><a href="#" class="footer__link">Operation & Maintenance</a></li>
+                            <li><a href="#" class="footer__link">HVAC & Refrigeration</a></li>
+                            <li><a href="#" class="footer__link">Descaling / Retubing</a></li>
+                            <li><a href="#" class="footer__link">Industrial Supply, Installation & Services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Information</h3>
+                        <ul>
+                            <li><a href="#" class="footer__link">Services</a></li>
+                            <li><a href="#" class="footer__link">Contact us</a></li>
+                            <li><a href="#" class="footer__link">Privacy policy</a></li>
+                            <li><a href="#" class="footer__link">Terms of services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Address</h3>
+                        <ul>
+                            <li>PO Box: 5080/6777 | Dammam 32245 |</li>
+                            <li>Malik Fahd Road | Saudi Arabia</li>
+                            <li>055 437 9781</li>
+                            <li>abdulqadir@technolink.com.sa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+                <p class="footer__copy">&#169; 2024 Techno Link Company. All right reserved</p>
+            </footer>
+
+            <!--========== SCROLL REVEAL ==========-->
+            <script src="https://unpkg.com/scrollreveal"></script>
+
+            <!--========== MAIN JS ==========-->
+            <script src="booking.js"></script>
+</body>
+
+</html>
